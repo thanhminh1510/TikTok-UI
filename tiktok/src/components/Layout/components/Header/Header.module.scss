@@ -1,3 +1,6 @@
+
+
+
 .wrapper{
     --search-boder-radius:92px;
     --search-height:46px;
@@ -91,4 +94,34 @@
    &:active{
     background-color: rgba(22, 24, 35, .06);
    }
+}
+
+.listAction{
+    list-style-type:none ;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    .listAction-item{
+        cursor: pointer;
+        margin: 0 8px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.actionLogin-icon {
+    font-size: 20px;
+    padding: 6px;
+}
+.actionLogin-img{
+    cursor: pointer;
+}
+.actionLogin-img img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

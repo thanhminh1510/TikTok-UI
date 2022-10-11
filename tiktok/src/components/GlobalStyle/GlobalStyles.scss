@@ -34,3 +34,27 @@ a [href]{
     color:var( --text-color);
     text-decoration: none;
 }
+.btn {
+    min-width: 110px;
+    padding: 0 16px;
+    height: 3.6rem;
+    border-radius: 5px;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    background: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 550;
+    color: var(--text-color);
+    &:hover{
+        background-color: rgba(22, 24, 35, .03);
+    }
+}
+.btn.btn-login {
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 700;
+    border:none;
+}
+.btn-vertical{
+    font-size: 20px;
+    padding: 5px 10px;
+}

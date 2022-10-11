@@ -1,8 +1,15 @@
 import classNames from "classnames/bind";
 import styles from "./Header.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmarkCircle,faSpinner,faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faXmarkCircle,
+        // faSpinner,
+        faSearch,faPlus ,
+        // faEllipsisVertical,
+        faMessage, } from "@fortawesome/free-solid-svg-icons";
 
+import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
+
+import imgs from "~/assets/images/index";
 
 
 
@@ -48,8 +55,23 @@ export default function Header() {
                     <FontAwesomeIcon icon={faSearch}/>
                 </button>
         </div>
-        <div className={cx('action')}>
-          action
+        {/* <div className={cx('action')}>
+                <ul className={cx('listAction')}>
+                  <li className={cx('listAction-item')}><button className={cx('btn btn-upload')}><FontAwesomeIcon icon={faPlus}/>Tải lên</button></li>
+                  <li className={cx('listAction-item')}><button className={cx('btn btn-login')}>Đăng nhập</button></li>
+                  <li className={cx('listAction-item')}><FontAwesomeIcon className={cx('btn-vertical')} icon={faEllipsisVertical}/></li>
+                </ul>
+        </div> */}
+        <div className={cx('actionLogin')}>
+                <ul className={cx('listAction')}>
+                  <li className={cx('listAction-item')}><button className={cx('btn btn-upload')}><FontAwesomeIcon icon={faPlus}/>Tải lên</button></li>
+                  <li className={cx('listAction-item')}><FontAwesomeIcon className={cx('actionLogin-icon')} icon={faPaperPlane}/></li>
+                  <li className={cx('listAction-item')}><FontAwesomeIcon className={cx('actionLogin-icon')} icon={faMessage}/></li>
+                  <li className={cx('listAction-item')}><div className={cx('actionLogin-img')}>
+                    
+                    <img src={imgs.avatar} alt="Avatar"/>
+                    </div></li>
+                </ul>
         </div>
       </div>
     </header>
